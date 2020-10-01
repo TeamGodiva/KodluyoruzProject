@@ -48,4 +48,9 @@ public class SphereController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public bool IsPainted()
+    {
+        return isPaintableSphere;
+    }
 }

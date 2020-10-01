@@ -4977,9 +4977,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3038018240946275216}
-  - component: {fileID: -8932843480411960812}
   m_Layer: 0
-  m_Name: Level1Pre 1_
+  m_Name: Level 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5000,21 +4999,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-8932843480411960812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4657418692255238487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79541ac5f5579734da1ec212c67c2b82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberOfSphereRequiredColor: 0
-  timeToFinishTheLevel: 0
-  timeToNavigatePuzzle: 0
 --- !u!1 &6275689417090897585
 GameObject:
   m_ObjectHideFlags: 0
@@ -5110,6 +5094,8 @@ MonoBehaviour:
   - {fileID: 4789948363546162169}
   - {fileID: 4789948364536777523}
   - {fileID: 4789948365446894517}
+  numberOfSphereRequiredColor: 9
+  timeToFinishTheLevel: 45
 --- !u!65 &5073361543237949771
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -19,14 +19,13 @@ public class LevelController : MonoBehaviour
     private void Start()
     {
         LoadLevel();
-        _boardController = FindObjectOfType<BoardController>();
     }
-
 
     public void LoadLevel()
     {
         LoadMapArea();
-        _requiredProgress = levels[_index].GetComponent<LevelItem>().NumberOfSphereRequiredColor;
+        _boardController = FindObjectOfType<BoardController>();
+        _requiredProgress = _boardController.GetNumberOfSphereRequiredColor();
         LoadProgressBar();
         LoadCountdownTimer();
     }
@@ -100,14 +99,14 @@ public class LevelController : MonoBehaviour
 
     public void LoadProgressBar()
     {
-        progressBarController.RequiredProgress = levels[_index].GetComponent<LevelItem>().NumberOfSphereRequiredColor;
+        progressBarController.RequiredProgress = _boardController.GetNumberOfSphereRequiredColor();
         progressBarController.LoadLevelText(_index);
     }
 
 
     public void LoadCountdownTimer()
     {
-        countDownTimerController.TimeLeft = levels[_index].GetComponent<LevelItem>().TimeToFinishTheLevel;
+        countDownTimerController.TimeLeft = _boardController.GetTimeToFinishTheLevel();
         countDownTimerController.StartCountDownTimer();
     }
 
