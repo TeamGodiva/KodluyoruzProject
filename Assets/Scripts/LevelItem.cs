@@ -12,13 +12,11 @@ public class LevelItem : MonoBehaviour
     public int NumberOfSphereRequiredColor
     {
         get => numberOfSphereRequiredColor;
-        set => numberOfSphereRequiredColor = value;
     }
 
     public float TimeToFinishTheLevel
     {
         get => timeToFinishTheLevel;
-        set => timeToFinishTheLevel = value;
     }
 
     public float TimeToNavigatePuzzle
