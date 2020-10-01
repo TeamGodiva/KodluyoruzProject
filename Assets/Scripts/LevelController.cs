@@ -24,7 +24,8 @@ public class LevelController : MonoBehaviour
 
     public void LoadLevel()
     {
-        progressBarController.ResetVar();
+        // TODO RESET -> PROGRESS BAR 
+        // progressBarController.ResetVar();
         LoadMapArea();
         _boardController = FindObjectOfType<BoardController>();
         ResetCarPosition();
