@@ -1,0 +1,434 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1747971342745681056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2592901506996434018}
+  - component: {fileID: -9171051813757925471}
+  m_Layer: 0
+  m_Name: Level 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2592901506996434018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747971342745681056}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4800069297994623168}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-9171051813757925471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747971342745681056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79541ac5f5579734da1ec212c67c2b82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfSphereRequiredColor: 0
+  timeToFinishTheLevel: 0
+  timeToNavigatePuzzle: 0
+--- !u!1001 &3950516476513483675
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2592901506996434018}
+    m_Modifications:
+    - target: {fileID: 4144345878751657060, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.r
+      value: 0.20705767
+      objectReference: {fileID: 0}
+    - target: {fileID: 4144345878751657060, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.b
+      value: 0.564169
+      objectReference: {fileID: 0}
+    - target: {fileID: 4144345878751657060, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.g
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 4144345878751657060, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745346741778, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: isPainted
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745346741778, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.r
+      value: 0.20705767
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745346741778, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.g
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745346741778, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.b
+      value: 0.564169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745346741778, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745547909921, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: isPainted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745569305806, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.r
+      value: 0.20705767
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745569305806, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.g
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745569305806, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.b
+      value: 0.564169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745569305806, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745610820005, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: isPainted
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745610820005, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.r
+      value: 0.20705767
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745610820005, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.g
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745610820005, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.b
+      value: 0.564169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745610820005, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745871968341, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.r
+      value: 0.20705767
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745871968341, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.g
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745871968341, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.b
+      value: 0.564169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745871968341, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745942254455, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.r
+      value: 0.20705767
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745942254455, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.g
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745942254455, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.b
+      value: 0.564169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745942254455, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745955635133, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: isPainted
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745955635133, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.r
+      value: 0.20705767
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745955635133, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.g
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745955635133, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.b
+      value: 0.564169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745955635133, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745982973932, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: isPainted
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745982973932, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.r
+      value: 0.20705767
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745982973932, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.g
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745982973932, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.b
+      value: 0.564169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772745982973932, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746172309314, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: isPainted
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746172309314, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.r
+      value: 0.20705767
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746172309314, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.g
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746172309314, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.b
+      value: 0.564169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746172309314, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746370911960, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: isPainted
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746370911960, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.r
+      value: 0.20705767
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746370911960, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.g
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746370911960, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.b
+      value: 0.564169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746370911960, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746443325441, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: isPainted
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746443325441, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.r
+      value: 0.20705767
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746443325441, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.g
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746443325441, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.b
+      value: 0.564169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746443325441, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746527580703, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: isPainted
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746527580703, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.r
+      value: 0.20705767
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746527580703, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.g
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746527580703, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.b
+      value: 0.564169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746527580703, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746836692147, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: isPainted
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746836692147, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.r
+      value: 0.20705767
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746836692147, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.g
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746836692147, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.b
+      value: 0.564169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998772746836692147, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: sphereColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380715489744360282, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: m_Name
+      value: Board
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380715489744360283, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380715489744360283, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380715489744360283, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380715489744360283, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380715489744360283, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380715489744360283, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380715489744360283, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380715489744360283, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380715489744360283, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380715489744360283, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380715489744360283, guid: ea34c55cb058e1b46b509fd0523d2f64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ea34c55cb058e1b46b509fd0523d2f64, type: 3}
+--- !u!4 &4800069297994623168 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8380715489744360283, guid: ea34c55cb058e1b46b509fd0523d2f64,
+    type: 3}
+  m_PrefabInstance: {fileID: 3950516476513483675}
+  m_PrefabAsset: {fileID: 0}
