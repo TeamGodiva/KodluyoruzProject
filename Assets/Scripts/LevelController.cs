@@ -18,7 +18,6 @@ public class LevelController : MonoBehaviour
 
     private void Start()
     {
-        _index = 0;
         LoadLevel();
         _boardController = FindObjectOfType<BoardController>();
     }
