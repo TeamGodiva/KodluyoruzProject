@@ -27,10 +27,16 @@ public class LevelController : MonoBehaviour
         progressBarController.ResetVar();
         LoadMapArea();
         _boardController = FindObjectOfType<BoardController>();
-        taxiPosition.position = _boardController.GetCarPosition();
+        ResetCarPosition();
         _requiredProgress = _boardController.GetNumberOfSphereRequiredColor();
         LoadProgressBar();
         LoadCountdownTimer();
+    }
+
+    private void ResetCarPosition()
+    {
+        taxiPosition.position = _boardController.GetCarPosition();
+        taxiPosition.rotation = Quaternion.identity;
     }
 
 
