@@ -1,5 +1,4 @@
-﻿
-using DG.Tweening;
+﻿using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,7 +12,7 @@ public class ProgressBarController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI nextLevel;
 
     private int _RequiredProgress;
-  
+
     private float _progressCounter;
 
     public int RequiredProgress
@@ -36,19 +35,18 @@ public class ProgressBarController : MonoBehaviour
 
     public void ResetVar()
     {
-     
         _progressCounter = 0;
     }
 
     public void IncreaseProgress()
     {
         _progressCounter++;
-        frontImage.DOFillAmount(_progressCounter / (RequiredProgress),1f);
+        frontImage.DOFillAmount(_progressCounter / (RequiredProgress), 1f);
     }
-    
+
     public void LoadLevelText(int index)
     {
-        currentLevel.SetText(""+(index+1));
-        nextLevel.SetText(""+(index+2));
+        currentLevel.SetText("" + (index + 1));
+        nextLevel.SetText("" + (index + 2));
     }
 }

@@ -17,13 +17,11 @@ public class TabToStart : MonoBehaviour
         if ((Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved) || Input.GetMouseButtonDown(0))
         {
             // Check if finger is over a UI element
-            if (EventSystem.current.currentSelectedGameObject == null && !(GameObject.Find("HowToPlay") == null) )
+            if (EventSystem.current.currentSelectedGameObject == null && !(GameObject.Find("HowToPlay") == null))
             {
-               
-                    Debug.Log("TAB TO START!!! -->>> TAG");
-                    StartGame();
-                    return;
-                
+                Debug.Log("TAB TO START!!! -->>> TAG");
+                StartGame();
+                return;
             }
 
             if (!EventSystem.current.currentSelectedGameObject.CompareTag("UI"))

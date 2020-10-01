@@ -114,11 +114,11 @@ public class UIController : MonoBehaviour
         LevelCompletedText.SetActive(true);
         StartCoroutine(CloseText());
     }
+
     IEnumerator CloseText()
     {
         yield return new WaitForSeconds(4f);
         LevelCompletedText.SetActive(false);
         GameController.Instance.LoadNextLevel();
     }
-    
 }

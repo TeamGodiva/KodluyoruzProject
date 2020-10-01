@@ -9,19 +9,25 @@ public class MoveController : MonoBehaviour
 {
     private const String Horizontal = "Horizontal";
     private const String Vertical = "Vertical";
-    
-    
 
-    [Tooltip("Attached object moves with keyboard arrows")][SerializeField] private Transform attachedObjectToMove;
-    [Tooltip("Motor Force")][SerializeField] private float motorForce;
-    [Tooltip("The power required to set the vehicle in motion")][SerializeField] private float breakForce;
-    [Tooltip("The Time that passes during rotating car ")][Range(0.1f,2)][SerializeField] private float rotationTime;
+
+    [Tooltip("Attached object moves with keyboard arrows")] [SerializeField]
+    private Transform attachedObjectToMove;
+
+    [Tooltip("Motor Force")] [SerializeField]
+    private float motorForce;
+
+    [Tooltip("The power required to set the vehicle in motion")] [SerializeField]
+    private float breakForce;
+
+    [Tooltip("The Time that passes during rotating car ")] [Range(0.1f, 2)] [SerializeField]
+    private float rotationTime;
 
     [SerializeField] private WheelCollider LF_Collider;
     [SerializeField] private WheelCollider RF_Collider;
     [SerializeField] private WheelCollider LB_Collider;
     [SerializeField] private WheelCollider RB_Collider;
-    
+
     [SerializeField] private Transform LF_Transform;
     [SerializeField] private Transform RF_Transform;
     [SerializeField] private Transform LB_Transform;
@@ -30,13 +36,13 @@ public class MoveController : MonoBehaviour
 
     private float verticalInput;
     private float horizontalInput;
-    
+
     private bool _isRotating;
     private float _currentBreakForce;
     private bool _isBreaking;
 
     // Timer Multiplier 
-    
+
     void Start()
     {
         _isBreaking = true;
@@ -45,18 +51,13 @@ public class MoveController : MonoBehaviour
 
     void FixedUpdate()
     {
-        
-        
-            MoveFront();
-            HandleMotor();
-            UpdateWheels();
-            
-        
+        MoveFront();
+        HandleMotor();
+        UpdateWheels();
     }
 
     public void ChangeState() //this stop the car.
     {
-
         _isBreaking = !_isBreaking;
     }
 
@@ -73,7 +74,7 @@ public class MoveController : MonoBehaviour
         {
             ApplyBreaking();
         }
-        
+
         ApplyMotorForceToWheels();
     }
 
@@ -85,7 +86,7 @@ public class MoveController : MonoBehaviour
         LB_Collider.motorTorque = verticalInput * motorForce;
     }
 
-    private void ApplyBreaking()  // stop car 
+    private void ApplyBreaking() // stop car 
     {
         LF_Collider.brakeTorque = _currentBreakForce;
         LB_Collider.brakeTorque = _currentBreakForce;
@@ -95,37 +96,35 @@ public class MoveController : MonoBehaviour
 
     private void UpdateWheels()
     {
-        RotateGivenWheel(LF_Collider,LF_Transform);
-        RotateGivenWheel(RF_Collider,RF_Transform);
-        RotateGivenWheel(LB_Collider,LB_Transform);
-        RotateGivenWheel(RB_Collider,RB_Transform);
-
+        RotateGivenWheel(LF_Collider, LF_Transform);
+        RotateGivenWheel(RF_Collider, RF_Transform);
+        RotateGivenWheel(LB_Collider, LB_Transform);
+        RotateGivenWheel(RB_Collider, RB_Transform);
     }
 
     private void RotateGivenWheel(WheelCollider lfCollider, Transform lfTransform)
     {
         Vector3 pos;
         Quaternion rot;
-        lfCollider.GetWorldPose(out pos,out rot);
+        lfCollider.GetWorldPose(out pos, out rot);
         lfTransform.rotation = rot;
         lfTransform.position = pos;
     }
 
 
-    
     public void RotateLeft()
     {
         if (_isRotating) return;
         _isBreaking = true;
         _isRotating = true;
         attachedObjectToMove.DORotate(new Vector3(0, attachedObjectToMove.rotation.eulerAngles.y - 90, 0), rotationTime)
-            .OnComplete(()=>
+            .OnComplete(() =>
             {
                 _isRotating = false;
                 ResetBreaking();
             });
-        
     }
+
     public void RotateRight()
     {
         if (_isRotating) return;
@@ -133,10 +132,10 @@ public class MoveController : MonoBehaviour
         _isRotating = true;
         //Debug.Log("Local Rotation : " + attachedObjectToMove.rotation.eulerAngles.y);
         attachedObjectToMove.DORotate(new Vector3(0, attachedObjectToMove.rotation.eulerAngles.y + 90, 0), rotationTime)
-            .OnComplete(()=>
+            .OnComplete(() =>
             {
                 _isRotating = false;
-                 ResetBreaking();  //this function need to accelerate after rotating. Cause I used to 1k break torque to stop vehicle.
+                ResetBreaking(); //this function need to accelerate after rotating. Cause I used to 1k break torque to stop vehicle.
             });
     }
 
