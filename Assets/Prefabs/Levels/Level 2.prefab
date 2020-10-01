@@ -5095,7 +5095,7 @@ MonoBehaviour:
   - {fileID: 4789948364536777523}
   - {fileID: 4789948365446894517}
   timeToFinishTheLevel: 60
-  carPosition: {x: 15, y: 2.5, z: 0}
+  carPosition: {x: 15, y: 2.5, z: 5}
 --- !u!65 &5073361543237949771
 BoxCollider:
   m_ObjectHideFlags: 0
