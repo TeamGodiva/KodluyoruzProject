@@ -12,7 +12,6 @@ public class SphereController : MonoBehaviour
     private Material[] _cubeMaterials;
     private Material _sphereMaterial;
     private Color _defaultCubeColor;
-    private Color _defaultSphereColor;
     private string _color = "_Color";
 
     void Awake()
@@ -20,7 +19,6 @@ public class SphereController : MonoBehaviour
         _cubeMaterials = cubeRenderer.materials;
         _sphereMaterial = GetComponent<Renderer>().material;
         _defaultCubeColor = _cubeMaterials[1].color;
-        _defaultSphereColor = _sphereMaterial.GetColor(_color);
     }
 
     public void HighlightPaintedSphere()
