@@ -12,7 +12,6 @@ public class SphereController : MonoBehaviour
     private Material[] _cubeMaterials;
     private Material _sphereMaterial;
     private Color _defaultCubeColor;
-    private string _color = "_Color";
 
     void Awake()
     {
