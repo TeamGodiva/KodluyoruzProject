@@ -6,11 +6,11 @@ using UnityEngine;
 public class BoardController : MonoBehaviour
 {
     [SerializeField] private SphereController[] sphereControllers;
-    private int _numberOfSphereRequiredColor;
     [SerializeField] private float timeToFinishTheLevel;
+    [SerializeField] private Vector3 carPosition;
+    private int _numberOfSphereRequiredColor;
 
-
-    private void Awake()
+    private void OnEnable()
     {
         CountPaintedSpheres();
     }
@@ -42,5 +42,10 @@ public class BoardController : MonoBehaviour
     public float GetTimeToFinishTheLevel()
     {
         return timeToFinishTheLevel;
+    }
+
+    public Vector3 GetCarPosition()
+    {
+        return carPosition;
     }
 }

@@ -89,10 +89,4 @@ public class GameController : MonoBehaviour
         
         
     }
-
-
-    public void LoadNextLevel()
-    {
-        uiController.OpenMainScreenEnvironments();
-    }
 }

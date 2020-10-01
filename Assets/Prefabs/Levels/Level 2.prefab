@@ -1322,7 +1322,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249349114345663138}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.85, y: 0, z: 10}
+  m_LocalPosition: {x: 10, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7011961321661910232}
@@ -2068,7 +2068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeRenderer: {fileID: 1762351948674606498}
-  sphereColor: {r: 0.29971242, g: 1, b: 0, a: 1}
+  sphereColor: {r: 1, g: 0, b: 0, a: 1}
   isPaintableSphere: 1
 --- !u!1 &4610978641667277743
 GameObject:
@@ -2446,7 +2446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeRenderer: {fileID: 1762351948635921907}
-  sphereColor: {r: 0.29971242, g: 1, b: 0, a: 1}
+  sphereColor: {r: 1, g: 0, b: 0, a: 1}
   isPaintableSphere: 1
 --- !u!1 &4610978641869621389
 GameObject:
@@ -2972,7 +2972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7011961320981548324
 Transform:
   m_ObjectHideFlags: 0
@@ -3076,8 +3076,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeRenderer: {fileID: 1762351948717329035}
-  sphereColor: {r: 0.29971242, g: 1, b: 0, a: 1}
-  isPaintableSphere: 0
+  sphereColor: {r: 1, g: 0, b: 0, a: 1}
+  isPaintableSphere: 1
 --- !u!1 &4610978642132892029
 GameObject:
   m_ObjectHideFlags: 0
@@ -3202,7 +3202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeRenderer: {fileID: 1762351948750140346}
-  sphereColor: {r: 0.29971242, g: 1, b: 0, a: 1}
+  sphereColor: {r: 1, g: 0, b: 0, a: 1}
   isPaintableSphere: 1
 --- !u!1 &4610978642253920859
 GameObject:
@@ -3832,7 +3832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeRenderer: {fileID: 1762351949938394796}
-  sphereColor: {r: 0.29971242, g: 1, b: 0, a: 1}
+  sphereColor: {r: 1, g: 0, b: 0, a: 1}
   isPaintableSphere: 1
 --- !u!1 &4610978643067346994
 GameObject:
@@ -4588,7 +4588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeRenderer: {fileID: 1762351950065158686}
-  sphereColor: {r: 0.29971242, g: 1, b: 0, a: 1}
+  sphereColor: {r: 1, g: 0, b: 0, a: 1}
   isPaintableSphere: 1
 --- !u!1 &4610978643526042032
 GameObject:
@@ -4840,7 +4840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeRenderer: {fileID: 1762351950450035280}
-  sphereColor: {r: 0.29971242, g: 1, b: 0, a: 1}
+  sphereColor: {r: 1, g: 0, b: 0, a: 1}
   isPaintableSphere: 1
 --- !u!1 &4610978643716743066
 GameObject:
@@ -4966,7 +4966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeRenderer: {fileID: 1762351950334023005}
-  sphereColor: {r: 0.29971242, g: 1, b: 0, a: 1}
+  sphereColor: {r: 1, g: 0, b: 0, a: 1}
   isPaintableSphere: 1
 --- !u!1 &4657418692255238487
 GameObject:
@@ -4978,7 +4978,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3038018240946275216}
   m_Layer: 0
-  m_Name: Level 1
+  m_Name: Level 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5095,7 +5095,7 @@ MonoBehaviour:
   - {fileID: 4789948364536777523}
   - {fileID: 4789948365446894517}
   timeToFinishTheLevel: 45
-  carPosition: {x: 5, y: 2.5, z: 0}
+  carPosition: {x: 15, y: 2.5, z: 0}
 --- !u!65 &5073361543237949771
 BoxCollider:
   m_ObjectHideFlags: 0

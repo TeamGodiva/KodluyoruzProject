@@ -9,6 +9,7 @@ public class LevelController : MonoBehaviour
     [SerializeField] private HintMap hintMap;
     [SerializeField] private ProgressBarController progressBarController;
     [SerializeField] private CountDownTimerController countDownTimerController;
+    [SerializeField] private Transform taxiPosition;
     private BoardController _boardController;
     private GameObject _currentLevel;
     private int _progressCount;
@@ -25,6 +26,8 @@ public class LevelController : MonoBehaviour
     {
         LoadMapArea();
         _boardController = FindObjectOfType<BoardController>();
+        taxiPosition.position = _boardController.GetCarPosition();
+        Debug.Log(taxiPosition);
         _requiredProgress = _boardController.GetNumberOfSphereRequiredColor();
         LoadProgressBar();
         LoadCountdownTimer();

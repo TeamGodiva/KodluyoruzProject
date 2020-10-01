@@ -22,7 +22,6 @@ public class UIController : MonoBehaviour
         CloseMainScreenEnvironments();
     }
 
-
     public void TabToStart() // if user clicked to game either other buttons this ui function will be called.
     {
         StartNavigation();
@@ -119,6 +118,5 @@ public class UIController : MonoBehaviour
     {
         yield return new WaitForSeconds(4f);
         LevelCompletedText.SetActive(false);
-        GameController.Instance.LoadNextLevel();
     }
 }
