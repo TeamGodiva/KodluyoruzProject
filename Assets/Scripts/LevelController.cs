@@ -29,9 +29,14 @@ public class LevelController : MonoBehaviour
         LoadMapArea();
         _boardController = FindObjectOfType<BoardController>();
         ResetCarPosition();
-        _requiredProgress = _boardController.GetNumberOfSphereRequiredColor();
+        GetRequiredProgress();
         LoadProgressBar();
         LoadCountdownTimer();
+    }
+
+    private void GetRequiredProgress()
+    {
+        _requiredProgress = _boardController.GetNumberOfSphereRequiredColor();
     }
 
     private void ResetCarPosition()
