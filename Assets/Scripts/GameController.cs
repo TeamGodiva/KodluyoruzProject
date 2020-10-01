@@ -28,29 +28,27 @@ public class GameController : MonoBehaviour
 
     public void LevelCompleted()
     {
+        //TODO
         //This is triggered from LevelController when the level is completed successfully;
-        carController.ChangeState();//its stop the car.
+        carController.ChangeState(); //its stop the car.
         ActivateCompleteParticleSystem();
         uiController.ShowLevelCompletedText();
         //LoadNewLevel
-
-
+        levelController.LoadNextLevel();
     }
 
     private void ActivateCompleteParticleSystem()
     {
         //TODO bu nasıl isimdir yiğidim.
-        
         partSystem.SetActive(true);
         StartCoroutine(DeActiveParticle());
-
     }
 
 
     IEnumerator DeActiveParticle()
     {
-       yield return new WaitForSeconds(1.5f);
-       partSystem.SetActive(false);
+        yield return new WaitForSeconds(1.5f);
+        partSystem.SetActive(false);
     }
 
     public void StartNavigation() //When user tap to start game. this function is called.
@@ -58,11 +56,10 @@ public class GameController : MonoBehaviour
         //close main ui environments - Show navigation
         //close navigation
         //After navigation end start the time and set active game play buttons.
-    
+
         uiController.StartNavigation();
         levelController.HighlightSquares();
         //after Highlight navigation close is called. and GameEnvironments are called from ui controller.
-        
     }
 
     public void CloseNavigation()
@@ -80,13 +77,10 @@ public class GameController : MonoBehaviour
     public void OnResume()
     {
         //if user click to continue button this function will be called.
-        
     }
-    
+
     public void OnStop()
     {
         //Check timer if time is done call this function
-        
-        
     }
 }

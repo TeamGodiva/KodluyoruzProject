@@ -11,30 +11,19 @@ public class ProgressBarController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI currentLevel;
     [SerializeField] private TextMeshProUGUI nextLevel;
 
-    private int _RequiredProgress;
+    private int _requiredProgress;
 
     private float _progressCounter;
 
     public int RequiredProgress
     {
-        get => _RequiredProgress;
-        set => _RequiredProgress = value;
-    }
-
-    public TextMeshProUGUI CurrentLevel
-    {
-        get => currentLevel;
-        set => currentLevel = value;
-    }
-
-    public TextMeshProUGUI NextLevel
-    {
-        get => nextLevel;
-        set => nextLevel = value;
+        get => _requiredProgress;
+        set => _requiredProgress = value;
     }
 
     public void ResetVar()
     {
+        _requiredProgress = 0;
         _progressCounter = 0;
     }
 

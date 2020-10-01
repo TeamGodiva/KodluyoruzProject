@@ -24,10 +24,10 @@ public class LevelController : MonoBehaviour
 
     public void LoadLevel()
     {
+        progressBarController.ResetVar();
         LoadMapArea();
         _boardController = FindObjectOfType<BoardController>();
         taxiPosition.position = _boardController.GetCarPosition();
-        Debug.Log(taxiPosition);
         _requiredProgress = _boardController.GetNumberOfSphereRequiredColor();
         LoadProgressBar();
         LoadCountdownTimer();
