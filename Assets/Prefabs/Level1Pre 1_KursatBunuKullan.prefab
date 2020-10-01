@@ -4979,7 +4979,7 @@ GameObject:
   - component: {fileID: 3038018240946275216}
   - component: {fileID: 8461467313094049161}
   m_Layer: 0
-  m_Name: Level1Pre 1
+  m_Name: Level1Pre 1_KursatBunuKullan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5012,7 +5012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79541ac5f5579734da1ec212c67c2b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfSphereRequiredColor: 9
+  numberOfSphereRequiredColor: 8
   timeToFinishTheLevel: 45
   timeToNavigatePuzzle: 5
 --- !u!1 &6275689417090897585

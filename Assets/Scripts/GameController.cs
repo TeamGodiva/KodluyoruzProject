@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
@@ -8,6 +10,7 @@ public class GameController : MonoBehaviour
     public LevelController levelController;
     public MoveController carController;
     public UIController uiController;
+    public GameObject partSystem;
 
     private void Awake()
     {
@@ -26,6 +29,28 @@ public class GameController : MonoBehaviour
     public void LevelCompleted()
     {
         //This is triggered from LevelController when the level is completed successfully;
+        carController.ChangeState();//its stop the car.
+        ActivateCompleteParticleSystem();
+        uiController.ShowLevelCompletedText();
+        //LoadNewLevel
+
+
+    }
+
+    private void ActivateCompleteParticleSystem()
+    {
+        //TODO bu nasıl isimdir yiğidim.
+        
+        partSystem.SetActive(true);
+        StartCoroutine(DeActiveParticle());
+
+    }
+
+
+    IEnumerator DeActiveParticle()
+    {
+       yield return new WaitForSeconds(1.5f);
+       partSystem.SetActive(false);
     }
 
     public void StartNavigation() //When user tap to start game. this function is called.
@@ -50,5 +75,24 @@ public class GameController : MonoBehaviour
         levelController.StartOrStopTimer();
         carController.MoveCar();
         uiController.ScreenButtonsAvailable();
+    }
+
+    public void OnResume()
+    {
+        //if user click to continue button this function will be called.
+        
+    }
+    
+    public void OnStop()
+    {
+        //Check timer if time is done call this function
+        
+        
+    }
+
+
+    public void LoadNextLevel()
+    {
+        uiController.OpenMainScreenEnvironments();
     }
 }

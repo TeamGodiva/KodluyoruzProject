@@ -54,7 +54,7 @@ public class MoveController : MonoBehaviour
         
     }
 
-    public void ChangeState()
+    public void ChangeState() //this stop the car.
     {
 
         _isBreaking = !_isBreaking;
@@ -150,7 +150,6 @@ public class MoveController : MonoBehaviour
 
     public void MoveCar()
     {
-        ChangeState();
-        MoveFront();
+        ResetBreaking();
     }
 }

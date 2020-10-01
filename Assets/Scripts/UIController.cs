@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class UIController : MonoBehaviour
@@ -11,6 +12,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private Transform ScreenMovementButtons;
     [SerializeField] private Transform[] mainScreenEnvironments;
     [SerializeField] private Transform[] gameScreenEnvironments;
+    [SerializeField] private GameObject LevelCompletedText;
     public static int HighlightedDuration = 3;
 
     public void OpenTutorial()
@@ -106,4 +108,17 @@ public class UIController : MonoBehaviour
     {
         ScreenMovementButtons.gameObject.SetActive(false);
     }
+
+    public void ShowLevelCompletedText()
+    {
+        LevelCompletedText.SetActive(true);
+        StartCoroutine(CloseText());
+    }
+    IEnumerator CloseText()
+    {
+        yield return new WaitForSeconds(4f);
+        LevelCompletedText.SetActive(false);
+        GameController.Instance.LoadNextLevel();
+    }
+    
 }

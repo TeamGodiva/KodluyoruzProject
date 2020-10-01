@@ -43,7 +43,7 @@ public class ProgressBarController : MonoBehaviour
     public void IncreaseProgress()
     {
         _progressCounter++;
-        frontImage.DOFillAmount(_progressCounter / (RequiredProgress-1),1f);
+        frontImage.DOFillAmount(_progressCounter / (RequiredProgress),1f);
     }
     
     public void LoadLevelText(int index)
