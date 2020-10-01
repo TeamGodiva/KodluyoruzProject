@@ -34,7 +34,6 @@ public class GameController : MonoBehaviour
         ActivateCompleteParticleSystem();
         uiController.ShowLevelCompletedText();
         //LoadNewLevel
-        levelController.LoadNextLevel();
     }
 
     private void ActivateCompleteParticleSystem()
@@ -82,5 +81,12 @@ public class GameController : MonoBehaviour
     public void OnStop()
     {
         //Check timer if time is done call this function
+    }
+
+    public void LoadNextLevel()
+    {
+
+        DeActiveParticle();
+        levelController.LoadNextLevel();
     }
 }

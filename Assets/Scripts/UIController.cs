@@ -117,6 +117,7 @@ public class UIController : MonoBehaviour
     IEnumerator CloseText()
     {
         yield return new WaitForSeconds(4f);
+        GameController.Instance.LoadNextLevel();
         LevelCompletedText.SetActive(false);
     }
 }
