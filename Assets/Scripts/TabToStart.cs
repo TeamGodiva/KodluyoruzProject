@@ -20,7 +20,6 @@ public class TabToStart : MonoBehaviour
             if (EventSystem.current.currentSelectedGameObject == null && !(GameObject.Find("HowToPlay") == null)
                 && !FindObjectOfType<SettingsMenuController>()._isExpanded)
             {
-                Debug.Log("TAB TO START!!! -->>> TAG");
                 StartGame();
                 return;
             }
