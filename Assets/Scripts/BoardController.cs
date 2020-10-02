@@ -9,7 +9,7 @@ public class BoardController : MonoBehaviour
     [SerializeField] private Vector3 carPosition;
     private int _numberOfSphereRequiredColor;
     private float _timeToFinishTheLevel;
-    private float _sphereMultiplier = 3f;
+    private float _sphereMultiplier = 4f;
 
     private void OnEnable()
     {
