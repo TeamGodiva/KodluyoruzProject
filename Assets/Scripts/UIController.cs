@@ -10,6 +10,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private Transform tutorialUICanvasObjects;
     [SerializeField] private Transform NavigationUICanvasObjects;
     [SerializeField] private Transform ScreenMovementButtons;
+    [SerializeField] private Transform CountDownUI;
     [SerializeField] private Transform[] mainScreenEnvironments;
     [SerializeField] private Transform[] gameScreenEnvironments;
     [SerializeField] private GameObject LevelCompletedText;
@@ -58,7 +59,12 @@ public class UIController : MonoBehaviour
         {
             obj.gameObject.SetActive(true);
         }
+        
+        CountDownUI.gameObject.SetActive(false);
+
     }
+
+  
 
     public void CloseTutorial()
     {
@@ -94,8 +100,8 @@ public class UIController : MonoBehaviour
         {
             obj.gameObject.SetActive(true);
         }
-
         GameController.Instance.StartTimerAndCarMovement();
+        
     }
 
     public void ScreenButtonsAvailable()
@@ -116,9 +122,12 @@ public class UIController : MonoBehaviour
 
     IEnumerator CloseText()
     {
+        ScreenButtonsDisabled();//stop movement
         yield return new WaitForSeconds(4f);
         LevelCompletedText.SetActive(false);
         GameController.Instance.EndLevelCompletedAndLoadNextLevel();
 
     }
+    
+    
 }

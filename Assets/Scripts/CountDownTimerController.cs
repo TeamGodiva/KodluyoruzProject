@@ -18,10 +18,7 @@ public class CountDownTimerController : MonoBehaviour
     private bool _isTimeStopped;
     private float _timeLeft;
 
-    private void Start()
-    {
-        ChangeTimerState();
-    }
+   
 
     public float TimeLeft
     {
@@ -48,6 +45,7 @@ public class CountDownTimerController : MonoBehaviour
         _tweenTime = _timeLeft;
         StartArrowRotation();
         StartFrontCircle();
+        
     }
     
     private void StartFrontCircle()
@@ -72,13 +70,14 @@ public class CountDownTimerController : MonoBehaviour
         _tweenOfCircleCalculate.TogglePause();
         _tweenOfArrowRotation.TogglePause();//???
     }
-
-    public void ResetTimer()
+    
+    public void LoadTimer()
     {
-        _tweenOfCircleCalculate.TogglePause();
-        _tweenOfArrowRotation.TogglePause();//???
-        _tweenOfCircleCalculate.Restart();
-        _tweenOfArrowRotation.Restart();
+        _isTimeStopped = false;
+        _tweenTime = _timeLeft;
+        StartArrowRotation();
+        StartFrontCircle();
+        ChangeTimerState();
         arrowImage.rotation=Quaternion.Euler(new Vector3(0,0,0));
     }
 }

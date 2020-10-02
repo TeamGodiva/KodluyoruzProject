@@ -66,7 +66,7 @@ public class GameController : MonoBehaviour
 
     public void StartTimerAndCarMovement()
     {
-        levelController.StartOrStopTimer();
+        levelController.StartTimer();
         carController.MoveCar();
         uiController.ScreenButtonsAvailable();
     }
@@ -84,12 +84,16 @@ public class GameController : MonoBehaviour
     private void LoadNextLevel()
     {
         levelController.LoadNextLevel();
+        uiController.OpenMainScreenEnvironments();
+        gameObject.GetComponent<TabToStart>().isStarted = false;
+
     }
 
-  
     public void EndLevelCompletedAndLoadNextLevel()
     {
         DeActiveParticle(); //until load next level, completed text and particle system are closed before load.
         LoadNextLevel();
     }
+
+  
 }

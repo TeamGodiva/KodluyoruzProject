@@ -128,8 +128,8 @@ public class LevelController : MonoBehaviour
     public void LoadCountdownTimer()
     {
         countDownTimerController.TimeLeft = _boardController.GetTimeToFinishTheLevel();
-        countDownTimerController.ResetTimer();
-        countDownTimerController.StartCountDownTimer();
+        countDownTimerController.LoadTimer();
+        // countDownTimerController.StartCountDownTimer();
     }
 
 
@@ -151,5 +151,9 @@ public class LevelController : MonoBehaviour
     {
         //after next level load called this function will update next properties for next level to progress bar
     }
-    
+
+    public void StartTimer()
+    {
+        countDownTimerController.StartCountDownTimer();
+    }
 }
