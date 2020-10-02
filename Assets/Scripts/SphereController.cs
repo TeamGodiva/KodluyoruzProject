@@ -9,13 +9,11 @@ public class SphereController : MonoBehaviour
 
     private Material[] _cubeMaterials;
     private Material _sphereMaterial;
-    private Color _defaultCubeColor;
 
     void Awake()
     {
         _cubeMaterials = cubeRenderer.materials;
         _sphereMaterial = GetComponent<Renderer>().material;
-        _defaultCubeColor = _cubeMaterials[1].color;
     }
 
     public void HighlightPaintedSphere()
