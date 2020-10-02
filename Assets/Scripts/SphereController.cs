@@ -54,9 +54,4 @@ public class SphereController : MonoBehaviour
     {
         return isPaintableSphere;
     }
-
-    public bool IsEnemy()
-    {
-        return isEnemySphere;
-    }
 }
