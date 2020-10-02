@@ -3129,8 +3129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - {fileID: 4657418692255238487, guid: a4889f91c36c46d4790f2215f5972880, type: 3}
-  - {fileID: 4657418692255238487, guid: 959417369b490f245b1c0275c0c5012d, type: 3}
+  - {fileID: 4657418692255238487, guid: 3e6afc7accd064343a7a85c02b97663e, type: 3}
   hintMap: {fileID: 342916647}
   progressBarController: {fileID: 721171440}
   countDownTimerController: {fileID: 2025906811}
@@ -8504,7 +8503,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 4671974335700955986}
   sphereColor: {r: 0.9433962, g: 0.17354932, b: 0.90722483, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &2547333231489440670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9402,7 +9400,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351949165107560}
   sphereColor: {r: 0.9433962, g: 0.17354932, b: 0.90722483, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &4789948363528424561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9418,7 +9415,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351948986057605}
   sphereColor: {r: 0.29971242, g: 1, b: 0, a: 1}
   isPaintableSphere: 1
-  isEnemySphere: 0
 --- !u!114 &4789948363559641128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9434,7 +9430,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351949018361820}
   sphereColor: {r: 0.9433962, g: 0.17354932, b: 0.90722483, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &4789948363889066125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9450,7 +9445,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351948675747705}
   sphereColor: {r: 0.29971242, g: 1, b: 0, a: 1}
   isPaintableSphere: 1
-  isEnemySphere: 0
 --- !u!114 &4789948363941912448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9466,7 +9460,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351948593614964}
   sphereColor: {r: 0.29971242, g: 1, b: 0, a: 1}
   isPaintableSphere: 1
-  isEnemySphere: 0
 --- !u!114 &4789948364036161962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9482,7 +9475,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351948554407518}
   sphereColor: {r: 0, g: 0, b: 0, a: 0}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &4789948364146740762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9498,7 +9490,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351948934496750}
   sphereColor: {r: 0.9433962, g: 0.17354932, b: 0.90722483, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &4789948364201597155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9514,7 +9505,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351948853958423}
   sphereColor: {r: 0.9433962, g: 0.17354932, b: 0.90722483, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &4789948364206702787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9530,7 +9520,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351948861427511}
   sphereColor: {r: 0.29971242, g: 1, b: 0, a: 1}
   isPaintableSphere: 1
-  isEnemySphere: 0
 --- !u!114 &4789948364358132445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9546,7 +9535,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351948744158505}
   sphereColor: {r: 0.9433962, g: 0.17354932, b: 0.90722483, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &4789948364397480931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9562,7 +9550,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351950260290583}
   sphereColor: {r: 0.9433962, g: 0.17354932, b: 0.90722483, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &4789948364410684428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9578,7 +9565,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351950272318456}
   sphereColor: {r: 0.9433962, g: 0.17354932, b: 0.90722483, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &4789948364481052758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9594,7 +9580,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351950206078882}
   sphereColor: {r: 0.29971242, g: 1, b: 0, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &4789948364519176551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9610,7 +9595,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351950247736979}
   sphereColor: {r: 0.29971242, g: 1, b: 0, a: 1}
   isPaintableSphere: 1
-  isEnemySphere: 0
 --- !u!114 &4789948364614818781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9626,7 +9610,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351950072845353}
   sphereColor: {r: 0.9433962, g: 0.17354932, b: 0.90722483, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &4789948364778358935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9642,7 +9625,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351950504429411}
   sphereColor: {r: 0.9433962, g: 0.17354932, b: 0.90722483, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &4789948364796948351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9658,7 +9640,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351950389846155}
   sphereColor: {r: 0.29971242, g: 1, b: 0, a: 1}
   isPaintableSphere: 1
-  isEnemySphere: 0
 --- !u!114 &4789948364859065269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9674,7 +9655,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351950453017665}
   sphereColor: {r: 0.9433962, g: 0.17354932, b: 0.90722483, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &4789948364886571657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9690,7 +9670,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351950346433917}
   sphereColor: {r: 0.9433962, g: 0.17354932, b: 0.90722483, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &4789948364901947182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9706,7 +9685,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351950359877850}
   sphereColor: {r: 0.29971242, g: 1, b: 0, a: 1}
   isPaintableSphere: 1
-  isEnemySphere: 0
 --- !u!114 &4789948364928910466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9722,7 +9700,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351949716802422}
   sphereColor: {r: 0.9433962, g: 0.17354932, b: 0.90722483, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &4789948365131905508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9738,7 +9715,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351949518026256}
   sphereColor: {r: 0.9433962, g: 0.17354932, b: 0.90722483, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &4789948365270054608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9754,7 +9730,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351949924612388}
   sphereColor: {r: 0.9433962, g: 0.17354932, b: 0.90722483, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!114 &4789948365446822465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9770,7 +9745,6 @@ MonoBehaviour:
   cubeRenderer: {fileID: 1762351949831796149}
   sphereColor: {r: 0.9433962, g: 0.17354932, b: 0.90722483, a: 1}
   isPaintableSphere: 0
-  isEnemySphere: 0
 --- !u!65 &5073361544416386146
 BoxCollider:
   m_ObjectHideFlags: 0
