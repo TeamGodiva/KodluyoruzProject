@@ -79,7 +79,7 @@ public class LevelController : MonoBehaviour
             _index--;
     }
 
-    public void DestroyLevel()
+    private void DestroyLevel()
     {
         if (_currentLevel)
             Destroy(_currentLevel);
@@ -102,12 +102,12 @@ public class LevelController : MonoBehaviour
         return _progressCount == _requiredProgress;
     }
 
-    public void LevelIsCompleted()
+    private void LevelIsCompleted()
     {
         GameController.Instance.LevelCompleted();
     }
 
-    public void LoadProgressBar()
+    private void LoadProgressBar()
     {
         //clear all current level properties before next level load
         ResetCurrentLevelPropertiesForNextLevel();
@@ -117,7 +117,7 @@ public class LevelController : MonoBehaviour
     }
 
 
-    public void LoadCountdownTimer()
+    private void LoadCountdownTimer()
     {
         countDownTimerController.TimeLeft = _boardController.GetTimeToFinishTheLevel();
         countDownTimerController.LoadTimer();
@@ -131,7 +131,7 @@ public class LevelController : MonoBehaviour
             .ChangeTimerState(); //this function changes the timer state if timer already started this function stop the timer.
     }
 
-    public void ResetCurrentLevelPropertiesForNextLevel()
+    private void ResetCurrentLevelPropertiesForNextLevel()
     {
         //progress bar will be cleared and level controller level properties will be reset
         _progressCount = 0;
