@@ -69,10 +69,9 @@ public class LevelController : MonoBehaviour
 
     public void RestartLevel()
     {
+        countDownTimerController.ResetTimer();
         DestroyLevel();
-        DecreaseIndex();
-        _currentLevel = Instantiate(levels[_index]);
-        HighlightSquares();
+        LoadLevel();
     }
 
     private void IncreaseLevelIndex()

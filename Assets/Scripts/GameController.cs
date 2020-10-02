@@ -95,5 +95,14 @@ public class GameController : MonoBehaviour
         LoadNextLevel();
     }
 
-  
+
+    public void RestartGame()
+    {
+        //Load Current Level Open The UI Menu Again
+        levelController.RestartLevel();
+        carController.ResetCar();
+        uiController.OpenMainScreenEnvironments();
+        gameObject.GetComponent<TabToStart>().isStarted = false;
+        
+    }
 }

@@ -80,4 +80,11 @@ public class CountDownTimerController : MonoBehaviour
         ChangeTimerState();
         arrowImage.rotation=Quaternion.Euler(new Vector3(0,0,0));
     }
+
+    public void ResetTimer()
+    {
+        _tweenOfArrowRotation.Restart();
+        _tweenOfCircleCalculate.Restart();
+        ChangeTimerState();
+    }
 }

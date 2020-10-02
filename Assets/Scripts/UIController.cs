@@ -61,7 +61,7 @@ public class UIController : MonoBehaviour
         }
         
         CountDownUI.gameObject.SetActive(false);
-
+        ScreenMovementButtons.gameObject.SetActive(false);
     }
 
   

@@ -151,4 +151,9 @@ public class MoveController : MonoBehaviour
     {
         ResetBreaking();
     }
+
+    public void ResetCar()
+    {
+       ChangeState();
+    }
 }
