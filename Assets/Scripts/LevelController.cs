@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class LevelController : MonoBehaviour
 {
@@ -20,6 +21,12 @@ public class LevelController : MonoBehaviour
     private void Start()
     {
         LoadLevel();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown("space"))
+            LoadNextLevel();
     }
 
     public void LoadLevel()
