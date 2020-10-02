@@ -40,13 +40,11 @@ public class GameController : MonoBehaviour
     {
         //TODO bu nasıl isimdir yiğidim.
         partSystem.SetActive(true);
-        StartCoroutine(DeActiveParticle());
     }
 
 
-    IEnumerator DeActiveParticle()
+    private void DeActiveParticle()
     {
-        yield return new WaitForSeconds(1.5f);
         partSystem.SetActive(false);
     }
 
@@ -83,10 +81,15 @@ public class GameController : MonoBehaviour
         //Check timer if time is done call this function
     }
 
-    public void LoadNextLevel()
+    private void LoadNextLevel()
     {
-
-        DeActiveParticle();
         levelController.LoadNextLevel();
+    }
+
+  
+    public void EndLevelCompletedAndLoadNextLevel()
+    {
+        DeActiveParticle(); //until load next level, completed text and particle system are closed before load.
+        LoadNextLevel();
     }
 }

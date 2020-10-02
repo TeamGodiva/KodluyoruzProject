@@ -71,6 +71,14 @@ public class CountDownTimerController : MonoBehaviour
         _isTimeStopped = !_isTimeStopped;
         _tweenOfCircleCalculate.TogglePause();
         _tweenOfArrowRotation.TogglePause();//???
-    }    
-    
+    }
+
+    public void ResetTimer()
+    {
+        _tweenOfCircleCalculate.TogglePause();
+        _tweenOfArrowRotation.TogglePause();//???
+        _tweenOfCircleCalculate.Restart();
+        _tweenOfArrowRotation.Restart();
+        arrowImage.rotation=Quaternion.Euler(new Vector3(0,0,0));
+    }
 }

@@ -21,10 +21,10 @@ public class ProgressBarController : MonoBehaviour
         set => _requiredProgress = value;
     }
 
-    public void ResetVar()
+    public void ClearProgressbarProperties()
     {
-        _requiredProgress = 0;
         _progressCounter = 0;
+        frontImage.fillAmount = 0;
     }
 
     public void IncreaseProgress()
