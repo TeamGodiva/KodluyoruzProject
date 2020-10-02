@@ -251,7 +251,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -263,9 +263,9 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 9
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
-  m_textAlignment: 258
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -3130,8 +3130,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levels:
   - {fileID: 4657418692255238487, guid: a4889f91c36c46d4790f2215f5972880, type: 3}
-  - {fileID: 4657418692255238487, guid: 9ad1b6941926e82449bdd475a32d2db4, type: 3}
-  - {fileID: 4657418692255238487, guid: b2c17bbc4e100914dafaffce8ddd4de9, type: 3}
   hintMap: {fileID: 342916647}
   progressBarController: {fileID: 721171440}
   countDownTimerController: {fileID: 2025906811}
