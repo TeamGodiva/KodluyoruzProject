@@ -20,7 +20,6 @@ public class CountDownTimerController : MonoBehaviour
 
     public float TimeLeft
     {
-        get => _timeLeft;
         set => _timeLeft = value;
     }
 
