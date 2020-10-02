@@ -9,7 +9,6 @@ public class HintMap : MonoBehaviour
 
     public void ReminderButtonOnClick()
     {
-        //TODO add pause
         fullMap.SetActive(true);
         StartCoroutine(GameNavCoroutine());
     }
