@@ -34,19 +34,19 @@ public class TutorialController : MonoBehaviour
 
     void Animation()
     {
-        fingerIcon.DOAnchorPos(new Vector2(-71, 115), 1.5f).OnComplete(() =>
+        fingerIcon.DOAnchorPos(new Vector2(-170, 380), 1.5f).OnComplete(() =>
         {
             ShowClickAnimation(-1);
             carController.RotateLeft();
-            fingerIcon.DOAnchorPos(new Vector2(113, 115), 3f).OnComplete(() =>
+            fingerIcon.DOAnchorPos(new Vector2(260, 380), 3f).OnComplete(() =>
             {
                 ShowClickAnimation(1);
                 carController.RotateRight();
-                fingerIcon.DOAnchorPos(new Vector2(-71, 115), 3f).OnComplete(() =>
+                fingerIcon.DOAnchorPos(new Vector2(-170, 380), 3f).OnComplete(() =>
                 {
                     ShowClickAnimation(-1);
                     carController.RotateLeft();
-                    fingerIcon.DOAnchorPos(new Vector2(113, 115), 3f).OnComplete(() =>
+                    fingerIcon.DOAnchorPos(new Vector2(260, 380), 3f).OnComplete(() =>
                     {
                         ShowClickAnimation(1);
                         carController.RotateRight();
@@ -60,7 +60,7 @@ public class TutorialController : MonoBehaviour
 
     private void ShowClickAnimation(int i)
     {
-        clickIcon.anchoredPosition = new Vector2(i * 93, 136);
+        clickIcon.anchoredPosition = new Vector2(i * 214, 70);
         clickIcon.transform.GetComponent<Image>().DOFade(1, 0f).From(0).OnComplete(() =>
         {
             clickIcon.transform.GetComponent<Image>().DOFade(0, 0.4f).From(1);

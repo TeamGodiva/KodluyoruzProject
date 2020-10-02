@@ -33,7 +33,7 @@ public class SettingsMenuController : MonoBehaviour
     private Button _mainButton;
     private Vector2 _mainButtonPosition;
     private int _menuItemCount;
-    private bool _isExpanded;
+    public bool _isExpanded;
 
     void Start()
     {
