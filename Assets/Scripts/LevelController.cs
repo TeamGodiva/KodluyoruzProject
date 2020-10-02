@@ -19,12 +19,6 @@ public class LevelController : MonoBehaviour
         LoadLevel();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown("space"))
-            LoadNextLevel();
-    }
-
     public void LoadLevel()
     {
         LoadMapArea();
