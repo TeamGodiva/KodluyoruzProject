@@ -8543,7 +8543,6 @@ MonoBehaviour:
   - {fileID: 4789948365270054608}
   - {fileID: 4789948364146740762}
   - {fileID: 4789948363437987484}
-  timeToFinishTheLevel: 45
   carPosition: {x: 5, y: 2.5, z: 0}
 --- !u!23 &2901129373189535737
 MeshRenderer:
@@ -9334,7 +9333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3038018238937106105}
   m_Layer: 8
-  m_Name: Level 1
+  m_Name: Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
