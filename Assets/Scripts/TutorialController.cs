@@ -14,8 +14,6 @@ public class TutorialController : MonoBehaviour
     [SerializeField] private RectTransform fingerIcon;
     [SerializeField] private RectTransform clickIcon;
     [SerializeField] private MoveController carController;
-
-
     private Vector3 CarFirsPos;
 
     void Start()
