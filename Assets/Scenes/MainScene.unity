@@ -3130,6 +3130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levels:
   - {fileID: 4657418692255238487, guid: a4889f91c36c46d4790f2215f5972880, type: 3}
+  - {fileID: 4657418692255238487, guid: 959417369b490f245b1c0275c0c5012d, type: 3}
   hintMap: {fileID: 342916647}
   progressBarController: {fileID: 721171440}
   countDownTimerController: {fileID: 2025906811}
@@ -5919,6 +5920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f51ff174bc864f448839792faf763e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameController: {fileID: 1877772846}
   frontCircle: {fileID: 946412026}
   arrowImage: {fileID: 1221360840}
   secondText: {fileID: 460746813}
