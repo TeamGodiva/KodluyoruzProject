@@ -4,14 +4,14 @@ public class BoardController : MonoBehaviour
 {
     [SerializeField] private SphereController[] sphereControllers;
     [SerializeField] private Vector3 carPosition;
-    private int _numberOfSphereRequiredColor;
+    private int _coloredSphereCount;
     private float _timeToFinishTheLevel;
-    private float _sphereMultiplier = 4f;
+    private float _sphereMultiplier = 3f;
 
     private void OnEnable()
     {
         CountPaintedSpheres();
-        _timeToFinishTheLevel = _numberOfSphereRequiredColor * _sphereMultiplier;
+        _timeToFinishTheLevel = _coloredSphereCount * _sphereMultiplier;
     }
 
     public void HighlightSpheres()
@@ -22,18 +22,18 @@ public class BoardController : MonoBehaviour
         }
     }
 
-    public void CountPaintedSpheres()
+    private void CountPaintedSpheres()
     {
         foreach (var sphereController in sphereControllers)
         {
             if (sphereController.IsPainted())
-                _numberOfSphereRequiredColor++;
+                _coloredSphereCount++;
         }
     }
 
     public int GetNumberOfSphereRequiredColor()
     {
-        return _numberOfSphereRequiredColor;
+        return _coloredSphereCount;
     }
 
     public float GetTimeToFinishTheLevel()
