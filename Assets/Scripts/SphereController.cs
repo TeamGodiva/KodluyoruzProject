@@ -8,6 +8,7 @@ public class SphereController : MonoBehaviour
     [SerializeField] private Renderer cubeRenderer;
     [SerializeField] private Color sphereColor;
     [SerializeField] private bool isPaintableSphere;
+    [SerializeField] private bool isEnemySphere;
 
     private Material[] _cubeMaterials;
     private Material _sphereMaterial;
@@ -52,5 +53,10 @@ public class SphereController : MonoBehaviour
     public bool IsPainted()
     {
         return isPaintableSphere;
+    }
+
+    public bool IsEnemy()
+    {
+        return isEnemySphere;
     }
 }
