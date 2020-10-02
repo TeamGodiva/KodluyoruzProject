@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -18,23 +16,26 @@ public class TabToStart : MonoBehaviour
         {
             // Check if finger is over a UI element
             if (EventSystem.current.currentSelectedGameObject == null && !(GameObject.Find("HowToPlay") == null)
-                && !FindObjectOfType<SettingsMenuController>()._isExpanded)
+                                                                      && !FindObjectOfType<SettingsMenuController>()
+                                                                          ._isExpanded)
             {
                 StartGame();
                 return;
             }
-            
-            try {
+
+            try
+            {
                 if (!EventSystem.current.currentSelectedGameObject.CompareTag("UI"))
                 {
                     Debug.Log("TAB TO START!!! -->>> TAG");
                     StartGame();
                 }
-            }       
-            catch (NullReferenceException ex) { //this avoid null point error.
-              //  Debug.Log("DENIEDED");
             }
-           
+            catch (NullReferenceException ex)
+            {
+                //this avoid null point error.
+                //  Debug.Log("DENIEDED");
+            }
         }
     }
 

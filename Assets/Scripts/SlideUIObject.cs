@@ -13,14 +13,12 @@ public class SlideUIObject : MonoBehaviour
     [SerializeField] private Ease collapseEase;
     [SerializeField] private float easeTime;
 
-
     private bool _isSlided;
 
     private void Start()
     {
         _isSlided = false;
     }
-
 
     public void Slide() // If object is slided this method slides back if button is clicked.
     {

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using System.Collections;
 using UnityEngine;
 
 public class UIController : MonoBehaviour
@@ -59,12 +56,11 @@ public class UIController : MonoBehaviour
         {
             obj.gameObject.SetActive(true);
         }
-        
+
         CountDownUI.gameObject.SetActive(false);
         ScreenMovementButtons.gameObject.SetActive(false);
     }
 
-  
 
     public void CloseTutorial()
     {
@@ -100,8 +96,8 @@ public class UIController : MonoBehaviour
         {
             obj.gameObject.SetActive(true);
         }
+
         GameController.Instance.StartTimerAndCarMovement();
-        
     }
 
     public void ScreenButtonsAvailable()
@@ -122,12 +118,9 @@ public class UIController : MonoBehaviour
 
     IEnumerator CloseText()
     {
-        ScreenButtonsDisabled();//stop movement
+        ScreenButtonsDisabled(); //stop movement
         yield return new WaitForSeconds(4f);
         LevelCompletedText.SetActive(false);
         GameController.Instance.EndLevelCompletedAndLoadNextLevel();
-
     }
-    
-    
 }

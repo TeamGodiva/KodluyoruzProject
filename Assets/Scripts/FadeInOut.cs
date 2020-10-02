@@ -1,12 +1,9 @@
-﻿
-using DG.Tweening;
+﻿using DG.Tweening;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class FadeInOut : MonoBehaviour
 {
-
     [SerializeField] private Image objectColor;
     [SerializeField] private float time;
 

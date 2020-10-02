@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using DG.Tweening;
+﻿using DG.Tweening;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class SphereController : MonoBehaviour
 {
@@ -27,11 +25,7 @@ public class SphereController : MonoBehaviour
         {
             _cubeMaterials[1].DOColor(sphereColor, 0.5f)
                 .SetLoops((int) (UIController.HighlightedDuration / 0.5) + 2, LoopType.Yoyo)
-                .OnComplete(() =>
-                {
-                    //almost hard coding
-                    _cubeMaterials[1].color = _defaultCubeColor;
-                });
+                .OnComplete(() => { _cubeMaterials[1].color = _defaultCubeColor; });
         }
     }
 

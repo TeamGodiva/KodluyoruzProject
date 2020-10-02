@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
@@ -71,7 +68,6 @@ public class GameController : MonoBehaviour
         levelController.LoadNextLevel();
         uiController.OpenMainScreenEnvironments();
         gameObject.GetComponent<TabToStart>().isStarted = false;
-
     }
 
     public void EndLevelCompletedAndLoadNextLevel()
@@ -88,6 +84,5 @@ public class GameController : MonoBehaviour
         carController.ResetCar();
         uiController.OpenMainScreenEnvironments();
         gameObject.GetComponent<TabToStart>().isStarted = false;
-        
     }
 }

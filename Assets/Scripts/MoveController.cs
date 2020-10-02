@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
 
 public class MoveController : MonoBehaviour
 {
-    private const String Horizontal = "Horizontal";
-    private const String Vertical = "Vertical";
-
-
     [Tooltip("Attached object moves with keyboard arrows")] [SerializeField]
     private Transform attachedObjectToMove;
 
@@ -154,6 +148,6 @@ public class MoveController : MonoBehaviour
 
     public void ResetCar()
     {
-       ChangeState();
+        ChangeState();
     }
 }
