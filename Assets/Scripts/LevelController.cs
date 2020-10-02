@@ -53,11 +53,9 @@ public class LevelController : MonoBehaviour
 
     public void LoadNextLevel()
     {
-      
         DestroyLevel();
         IncreaseLevelIndex();
         LoadLevel();
-        //burada UI active edilmeli ve timer kapatılmalı ama ayarları önemli
     }
 
     private void LoadMapArea()
@@ -116,7 +114,7 @@ public class LevelController : MonoBehaviour
     {
         //clear all current level properties before next level load
         ResetCurrentLevelPropertiesForNextLevel();
-        
+
         progressBarController.RequiredProgress = _boardController.GetNumberOfSphereRequiredColor();
         progressBarController.LoadLevelText(_index);
     }
@@ -141,7 +139,6 @@ public class LevelController : MonoBehaviour
         //progress bar will be cleared and level controller level properties will be reset
         _progressCount = 0;
         progressBarController.ClearProgressbarProperties();
-
     }
 
     public void LoadCurrentLevelProperties()
