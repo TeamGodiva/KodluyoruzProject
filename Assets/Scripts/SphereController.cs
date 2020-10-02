@@ -10,7 +10,7 @@ public class SphereController : MonoBehaviour
     private Material[] _cubeMaterials;
     private Material _sphereMaterial;
 
-    void Awake()
+    void OnEnable()
     {
         _cubeMaterials = cubeRenderer.materials;
         _sphereMaterial = GetComponent<Renderer>().material;
