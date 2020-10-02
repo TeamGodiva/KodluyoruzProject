@@ -30,8 +30,6 @@ public class BoardController : MonoBehaviour
             if (sphereController.IsPainted())
                 _numberOfSphereRequiredColor++;
         }
-
-        Debug.Log(_numberOfSphereRequiredColor);
     }
 
     public int GetNumberOfSphereRequiredColor()
