@@ -6,7 +6,7 @@ public class BoardController : MonoBehaviour
     [SerializeField] private Vector3 carPosition;
     private int _coloredSphereCount;
     private float _timeToFinishTheLevel;
-    private float _sphereMultiplier = 3f;
+    private float _sphereMultiplier = 5f;
 
     private void Awake()
     {
@@ -26,14 +26,13 @@ public class BoardController : MonoBehaviour
     {
         foreach (var sphereController in sphereControllers)
         {
-            if (sphereController.IsPainted())
+            if (sphereController.IsPainted() && !sphereController.IsEnemy())
                 _coloredSphereCount++;
         }
     }
 
     public int GetNumberOfSphereRequiredColor()
     {
-        Debug.Log(_coloredSphereCount);
         return _coloredSphereCount;
     }
 

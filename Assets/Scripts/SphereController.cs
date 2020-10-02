@@ -6,6 +6,7 @@ public class SphereController : MonoBehaviour
     [SerializeField] private Renderer cubeRenderer;
     [SerializeField] private Color sphereColor;
     [SerializeField] private bool isPaintableSphere;
+    [SerializeField] private bool isEnemy;
 
     private Material[] _cubeMaterials;
     private Material _sphereMaterial;
@@ -27,21 +28,26 @@ public class SphereController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (isPaintableSphere && other.CompareTag("Player"))
+        if (isEnemy && other.CompareTag("Player"))
+        {
+            GameController.Instance.RestartGame();
+        }
+        else if (isPaintableSphere && other.CompareTag("Player"))
         {
             GameController.Instance.CubeIsColored();
             _sphereMaterial.color = sphereColor;
             _cubeMaterials[1].color = sphereColor;
             Destroy(gameObject);
         }
-        else if (!isPaintableSphere)
-        {
-            GameController.Instance.RestartGame();
-        }
     }
 
     public bool IsPainted()
     {
         return isPaintableSphere;
+    }
+
+    public bool IsEnemy()
+    {
+        return isEnemy;
     }
 }
