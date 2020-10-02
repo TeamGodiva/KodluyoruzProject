@@ -37,9 +37,9 @@ public class SphereController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!isPaintableSphere)
+        if (isEnemySphere)
         {
-            //istenmeyen bir sphere toplandı.
+            GameController.Instance.RestartGame();
         }
         else if (isPaintableSphere && other.CompareTag("Player"))
         {
