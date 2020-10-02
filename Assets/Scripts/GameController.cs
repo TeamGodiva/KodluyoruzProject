@@ -33,10 +33,8 @@ public class GameController : MonoBehaviour
 
     private void ActivateCompleteParticleSystem()
     {
-        //TODO bu nasıl isimdir yiğidim.
         partSystem.SetActive(true);
     }
-
 
     private void DeActiveParticle()
     {
