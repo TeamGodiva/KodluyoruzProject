@@ -8,7 +8,7 @@ public class BoardController : MonoBehaviour
     private float _timeToFinishTheLevel;
     private float _sphereMultiplier = 3f;
 
-    private void OnEnable()
+    private void Awake()
     {
         CountPaintedSpheres();
         _timeToFinishTheLevel = _coloredSphereCount * _sphereMultiplier;
@@ -33,6 +33,7 @@ public class BoardController : MonoBehaviour
 
     public int GetNumberOfSphereRequiredColor()
     {
+        Debug.Log(_coloredSphereCount);
         return _coloredSphereCount;
     }
 
