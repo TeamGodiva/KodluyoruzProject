@@ -7,7 +7,7 @@ public class GameOverController : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag(("Player")))
+        if (other.CompareTag(("Player")))
         {
             GameController.Instance.RestartGame();
         }
