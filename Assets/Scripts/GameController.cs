@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Runtime.CompilerServices;
+using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class GameController : MonoBehaviour
     public MoveController carController;
     public UIController uiController;
     public GameObject partSystem;
+    public VibrationController vibrationController;
 
     private void Awake()
     {
@@ -21,6 +23,7 @@ public class GameController : MonoBehaviour
     {
         // this function is triggered from sphere trigger collider when the car is collided with sphere.
         levelController.IncreaseLevelProgress();
+        vibrationController.VibratePhone();
     }
 
     public void LevelCompleted()

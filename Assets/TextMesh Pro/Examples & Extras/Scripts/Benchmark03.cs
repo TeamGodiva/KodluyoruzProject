@@ -4,10 +4,8 @@ using System.Collections;
 
 namespace TMPro.Examples
 {
-    
     public class Benchmark03 : MonoBehaviour
     {
-
         public int SpawnType = 0;
         public int NumberOfNPC = 12;
 
@@ -17,7 +15,6 @@ namespace TMPro.Examples
 
         void Awake()
         {
-
         }
 
 
@@ -74,6 +71,5 @@ namespace TMPro.Examples
                 }
             }
         }
-
     }
 }

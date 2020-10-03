@@ -4,10 +4,8 @@ using System.Collections;
 
 namespace TMPro.Examples
 {
-    
     public class Benchmark04 : MonoBehaviour
     {
-
         public int SpawnType = 0;
 
         public int MinPointSize = 12;
@@ -25,7 +23,7 @@ namespace TMPro.Examples
 
             float lineHeight = 0;
             float orthoSize = Camera.main.orthographicSize = Screen.height / 2;
-            float ratio = (float)Screen.width / Screen.height;
+            float ratio = (float) Screen.width / Screen.height;
 
             for (int i = MinPointSize; i <= MaxPointSize; i += Steps)
             {
@@ -36,7 +34,9 @@ namespace TMPro.Examples
 
                     if (lineHeight > orthoSize * 2) return;
 
-                    go.transform.position = m_Transform.position + new Vector3(ratio * -orthoSize * 0.975f, orthoSize * 0.975f - lineHeight, 0);
+                    go.transform.position = m_Transform.position +
+                                            new Vector3(ratio * -orthoSize * 0.975f, orthoSize * 0.975f - lineHeight,
+                                                0);
 
                     TextMeshPro textMeshPro = go.AddComponent<TextMeshPro>();
 
@@ -80,6 +80,5 @@ namespace TMPro.Examples
                 }
             }
         }
-
     }
 }
