@@ -4284,7 +4284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1452423164
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5070,7 +5070,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1784071657}
-        m_MethodName: StartNavigation
+        m_MethodName: StartHelper
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5373,6 +5373,7 @@ MonoBehaviour:
   carController: {fileID: 6999118881030828437}
   uiController: {fileID: 1784071657}
   partSystem: {fileID: 166878878}
+  vibrationController: {fileID: 0}
 --- !u!4 &1877772847
 Transform:
   m_ObjectHideFlags: 0
