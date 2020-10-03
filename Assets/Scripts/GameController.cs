@@ -23,7 +23,9 @@ public class GameController : MonoBehaviour
     {
         // this function is triggered from sphere trigger collider when the car is collided with sphere.
         levelController.IncreaseLevelProgress();
-        vibrationController.VibratePhone();
+        //TODO -> Get boolean value from settings 
+        // if (isVibration)
+        //     vibrationController.VibratePhone();
     }
 
     public void LevelCompleted()
