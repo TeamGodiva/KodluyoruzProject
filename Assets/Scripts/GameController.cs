@@ -25,7 +25,7 @@ public class GameController : MonoBehaviour
         levelController.IncreaseLevelProgress();
         //TODO -> Get boolean value from settings 
         // if (isVibration)
-        //     vibrationController.VibratePhone();
+        vibrationController.VibratePhone();
     }
 
     public void LevelCompleted()
