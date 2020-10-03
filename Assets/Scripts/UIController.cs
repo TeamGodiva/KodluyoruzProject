@@ -36,6 +36,21 @@ public class UIController : MonoBehaviour
         NavigationUICanvasObjects.gameObject.SetActive(true);
     }
 
+    public void StartHelper()
+    {
+        StartCoroutine(Helper());
+    }
+
+    IEnumerator Helper()
+    {
+        NavigationUICanvasObjects.gameObject.SetActive(true);
+        GameController.Instance.HighlightSquares();
+        GameController.Instance.StopTheCar();
+        yield return new WaitForSeconds(HighlightedDuration);
+        NavigationUICanvasObjects.gameObject.SetActive(false);
+        GameController.Instance.MoveTheCar();
+    }
+
     public void CloseNavigationElements()
     {
         NavigationUICanvasObjects.gameObject.SetActive(false);
