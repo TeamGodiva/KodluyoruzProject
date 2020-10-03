@@ -61,6 +61,22 @@ public class GameController : MonoBehaviour
         uiController.ScreenButtonsAvailable();
     }
 
+    public void MoveTheCar()
+    {
+        carController.MoveCar();
+    }
+
+    public void StopTheCar()
+    {
+        carController.ChangeState();
+    }
+
+    public void HighlightSquares()
+    {
+        levelController.HighlightSquares();
+    }
+
+
     private void LoadNextLevel()
     {
         levelController.LoadNextLevel();
