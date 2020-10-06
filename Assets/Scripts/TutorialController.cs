@@ -34,11 +34,11 @@ public class TutorialController : MonoBehaviour
         {
             ShowClickAnimation(-1);
             carController.RotateLeft();
-            fingerIcon.DOAnchorPos(new Vector2(260, 380), 3f).OnComplete(() =>
+            fingerIcon.DOAnchorPos(new Vector2(260, 380), 2.5f).OnComplete(() =>
             {
                 ShowClickAnimation(1);
                 carController.RotateRight();
-                fingerIcon.DOAnchorPos(new Vector2(-170, 380), 3f).OnComplete(() =>
+                fingerIcon.DOAnchorPos(new Vector2(-170, 380), 4f).OnComplete(() =>
                 {
                     ShowClickAnimation(-1);
                     carController.RotateLeft();
